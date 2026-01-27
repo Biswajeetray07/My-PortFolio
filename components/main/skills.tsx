@@ -11,7 +11,7 @@ import {
   LANGUAGES,
 } from "@/constants";
 
-export const Skills = () => {
+const Skills = () => {
   const allSkills = [
     ...FRONTEND_SKILL,
     ...BACKEND_SKILL,
@@ -74,3 +74,5 @@ export const Skills = () => {
     </section>
   );
 };
+
+export default Skills;

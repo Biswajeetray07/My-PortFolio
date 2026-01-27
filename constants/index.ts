@@ -197,16 +197,11 @@ export const DEVOPS_SKILL = [
   },
   {
     skill_name: "DVC",
-    image: "dvc.png",
+    image: "dvc.svg",
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "TensorBoard",
-    image: "tensorboard.png",
-    width: 70,
-    height: 70,
-  },
+
   {
     skill_name: "DagsHub",
     image: "dagshub.png",
