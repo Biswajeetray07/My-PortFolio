@@ -1,15 +1,36 @@
+"use client";
+
 import { SkillDataProvider } from "@/components/sub/skill-data-provider";
 import { SkillText } from "@/components/sub/skill-text";
 
 import {
   BACKEND_SKILL,
   FRONTEND_SKILL,
-  FULLSTACK_SKILL,
-  OTHER_SKILL,
-  SKILL_DATA,
+  AI_ML_SKILL,
+  DEVOPS_SKILL,
+  LANGUAGES,
 } from "@/constants";
 
 export const Skills = () => {
+  const allSkills = [
+    ...FRONTEND_SKILL,
+    ...BACKEND_SKILL,
+    ...AI_ML_SKILL,
+    ...DEVOPS_SKILL,
+    ...LANGUAGES,
+  ];
+
+  // Inverted Pyramid Slices: 10, 9, 8, 6, 3 (Adjusted for total count)
+  // Total items is roughly 36 + 1 (Figma) = 37.
+  // Let's do: 10, 9, 8, 6, 4
+  const skillRows = [
+    allSkills.slice(0, 10),
+    allSkills.slice(10, 19),
+    allSkills.slice(19, 27),
+    allSkills.slice(27, 33),
+    allSkills.slice(33, 37),
+  ];
+
   return (
     <section
       id="skills"
@@ -18,67 +39,23 @@ export const Skills = () => {
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {SKILL_DATA.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FRONTEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {BACKEND_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FULLSTACK_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {OTHER_SKILL.map((skill, i) => (
-          <SkillDataProvider
-            key={skill.skill_name}
-            src={skill.image}
-            name={skill.skill_name}
-            width={skill.width}
-            height={skill.height}
-            index={i}
-          />
-        ))}
-      </div>
+      {skillRows.map((row, rowIndex) => (
+        <div
+          key={`skill-row-${rowIndex}`}
+          className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center"
+        >
+          {row.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.image}
+              name={image.skill_name}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+          ))}
+        </div>
+      ))}
 
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">

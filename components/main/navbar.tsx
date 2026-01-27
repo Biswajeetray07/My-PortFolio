@@ -3,7 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { LINKS, NAV_LINKS } from "@/constants";
+import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Biswajeet Ray</div>
         </Link>
 
         {/* Web Navbar */}
@@ -55,16 +56,27 @@ export const Navbar = () => {
 
         {/* Social Icons (Web) */}
         <div className="hidden md:flex flex-row gap-5">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noreferrer noopener"
-              key={name}
-            >
-              <Icon className="h-6 w-6 text-white" />
-            </Link>
-          ))}
+          <Link
+            href="https://github.com/Biswajeetray07"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <RxGithubLogo className="h-6 w-6 text-white cursor-pointer hover:text-[rgb(112,66,248)] transition" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/biswajeet-ray/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <RxLinkedinLogo className="h-6 w-6 text-white cursor-pointer hover:text-[rgb(112,66,248)] transition" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/biswajeet_ray111/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <RxInstagramLogo className="h-6 w-6 text-white cursor-pointer hover:text-[rgb(112,66,248)] transition" />
+          </Link>
         </div>
 
         {/* Hamburger Menu */}
@@ -104,16 +116,27 @@ export const Navbar = () => {
 
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mt-6">
-            {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link
-                href={link}
-                target="_blank"
-                rel="noreferrer noopener"
-                key={name}
-              >
-                <Icon className="h-8 w-8 text-white" />
-              </Link>
-            ))}
+            <Link
+              href="https://github.com/Biswajeetray07"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <RxGithubLogo className="h-8 w-8 text-white" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/biswajeet-ray/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <RxLinkedinLogo className="h-8 w-8 text-white" />
+            </Link>
+            <Link
+              href="https://www.instagram.com/biswajeet_ray111/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <RxInstagramLogo className="h-8 w-8 text-white" />
+            </Link>
           </div>
         </div>
       )}

@@ -7,86 +7,7 @@ import {
   RxLinkedinLogo,
 } from "react-icons/rx";
 
-export const SKILL_DATA = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-] as const;
+
 
 export const SOCIALS = [
   {
@@ -108,6 +29,201 @@ export const SOCIALS = [
 
 export const FRONTEND_SKILL = [
   {
+    skill_name: "React",
+    image: "react.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Next.js",
+    image: "next.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Tailwind CSS",
+    image: "tailwind.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Three.js",
+    image: "threejs.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "GSAP",
+    image: "gsap.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Redux",
+    image: "redux.png",
+    width: 80,
+    height: 80,
+  },
+] as const;
+
+export const BACKEND_SKILL = [
+  {
+    skill_name: "Node.js",
+    image: "node.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Prisma",
+    image: "prisma.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "PostgreSQL",
+    image: "postgresql.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Neon",
+    image: "neon.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Supabase",
+    image: "supabase.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Express.js",
+    image: "express.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "FastAPI",
+    image: "fastapi.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "MongoDB",
+    image: "mongodb.png",
+    width: 40,
+    height: 40,
+  },
+] as const;
+
+// AI & ML Skills
+export const AI_ML_SKILL = [
+  {
+    skill_name: "LangChain",
+    image: "langchain.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "LangGraph",
+    image: "langgraph.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "LlamaIndex",
+    image: "llamaindex.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Ollama",
+    image: "ollama.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "TensorFlow",
+    image: "tensorflow.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Scikit-Learn",
+    image: "sklearn.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Hugging Face",
+    image: "huggingface.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "MLflow",
+    image: "mlflow.png",
+    width: 70,
+    height: 70,
+  },
+] as const;
+
+// DevOps & Tools
+export const DEVOPS_SKILL = [
+  {
+    skill_name: "Git",
+    image: "git.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "GitHub",
+    image: "github.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Docker",
+    image: "docker.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "AWS",
+    image: "aws.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "DVC",
+    image: "dvc.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "TensorBoard",
+    image: "tensorboard.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "DagsHub",
+    image: "dagshub.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Figma",
+    image: "figma.png",
+    width: 50,
+    height: 50,
+  },
+] as const;
+
+// Languages
+export const LANGUAGES = [
+  {
     skill_name: "HTML",
     image: "html.png",
     width: 80,
@@ -126,158 +242,49 @@ export const FRONTEND_SKILL = [
     height: 65,
   },
   {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "TypeScript",
     image: "ts.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-] as const;
-
-export const BACKEND_SKILL = [
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
+    skill_name: "Java",
+    image: "java.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "MySQL",
-    image: "mysql.png",
+    skill_name: "Python",
+    image: "python.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "Prisma",
-    image: "prisma.png",
+    skill_name: "SQL",
+    image: "sql.png",
     width: 70,
     height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
-] as const;
-
-export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Docker",
-    image: "docker.png",
-    width: 70,
-    height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
-  },
-] as const;
-
-export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
   },
 ] as const;
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
-    description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
+    title: "Aivon Tutor",
+    description: "A comprehensive DSA learning platform designed to help students master data structures and algorithms through interactive lessons and practice problems.",
     image: "/projects/project-1.png",
-    link: "https://example.com",
+    link: "https://github.com/Biswajeetray07/Aivon-Tutor.git",
   },
   {
-    title: "Interactive Cards Portfolio",
-    description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
+    title: "Crop Quality Analysis",
+    description: "An AI-powered application for analyzing crop quality, providing farmers and distributors with actionable insights to improve produce standards.",
     image: "/projects/project-2.png",
-    link: "https://example.com",
+    link: "https://github.com/Biswajeetray07/Crop-Quality-Analysis.git",
   },
   {
-    title: "Space Themed Website",
-    description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+    title: "iPhone 16 App Clone",
+    description: "A visually stunning clone of the iPhone 16 interface, demonstrating proficiency in modern mobile app development and UI/UX design.",
     image: "/projects/project-3.png",
-    link: "https://example.com",
+    link: "https://github.com/Biswajeetray07/iphone16App-Clone.git",
   },
 ] as const;
 

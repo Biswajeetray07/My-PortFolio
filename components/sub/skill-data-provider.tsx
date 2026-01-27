@@ -38,8 +38,13 @@ export const SkillDataProvider = ({
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
+      className="relative group"
+      title={name}
     >
       <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/80 text-white text-xs px-2 py-1 rounded whitespace-nowrap pointer-events-none">
+        {name}
+      </div>
     </motion.div>
   );
 };
