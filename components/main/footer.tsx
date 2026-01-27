@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
+import { HiMail } from "react-icons/hi";
 
 export const Footer = () => {
   return (
@@ -33,6 +34,13 @@ export const Footer = () => {
           >
             <RxInstagramLogo width={24} height={24} />
             <span className="text-[15px] ml-[6px]">Instagram</span>
+          </Link>
+          <Link
+            href="mailto:biswajeetray077@gmail.com"
+            className="flex flex-row items-center my-[15px] cursor-pointer"
+          >
+            <HiMail width={24} height={24} />
+            <span className="text-[15px] ml-[6px]">Email</span>
           </Link>
         </div>
 

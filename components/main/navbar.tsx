@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { LINKS, NAV_LINKS } from "@/constants";
 import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
+import { HiMail } from "react-icons/hi";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -77,6 +78,11 @@ export const Navbar = () => {
           >
             <RxInstagramLogo className="h-6 w-6 text-white cursor-pointer hover:text-[rgb(112,66,248)] transition" />
           </Link>
+          <Link
+            href="mailto:biswajeetray077@gmail.com"
+          >
+            <HiMail className="h-6 w-6 text-white cursor-pointer hover:text-[rgb(112,66,248)] transition" />
+          </Link>
         </div>
 
         {/* Hamburger Menu */}
@@ -136,6 +142,11 @@ export const Navbar = () => {
               rel="noreferrer noopener"
             >
               <RxInstagramLogo className="h-8 w-8 text-white" />
+            </Link>
+            <Link
+              href="mailto:biswajeetray077@gmail.com"
+            >
+              <HiMail className="h-8 w-8 text-white" />
             </Link>
           </div>
         </div>
