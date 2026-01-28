@@ -283,6 +283,33 @@ export const PROJECTS = [
   },
 ] as const;
 
+export const CERTIFICATIONS = [
+  {
+    title: "IBM AI Engineering Professional Certificate - Coursera",
+    description: "Sep 2024 - Jan 2025",
+    image: "/projects/project-1.png",
+    link: "https://www.coursera.org/professional-certificates/ai-engineer",
+  },
+  {
+    title: "Cloud Computing - NPTEL",
+    description: "Oct 2024 - Dec 2024",
+    image: "/projects/project-2.png",
+    link: "https://nptel.ac.in/courses/106/105/106105167/",
+  },
+  {
+    title: "GenAI for Everyone - Coursera",
+    description: "Feb 2024 - Mar 2024",
+    image: "/projects/project-3.png",
+    link: "https://www.coursera.org/learn/generative-ai-for-everyone",
+  },
+  {
+    title: "Prompt Engineering for ChatGPT - Coursera",
+    description: "Jan 2024 - Mar 2024",
+    image: "/projects/project-1.png",
+    link: "https://www.coursera.org/learn/prompt-engineering",
+  },
+] as const;
+
 export const FOOTER_DATA = [
   {
     title: "Community",
@@ -354,6 +381,10 @@ export const NAV_LINKS = [
   {
     title: "Skills",
     link: "#skills",
+  },
+  {
+    title: "Certifications",
+    link: "#certifications",
   },
   {
     title: "Projects",
