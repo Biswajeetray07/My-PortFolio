@@ -18,6 +18,7 @@ export const Projects = () => {
             title={project.title}
             description={project.description}
             link={project.link}
+            liveDemo={"liveDemo" in project ? project.liveDemo : undefined}
           />
         ))}
       </div>

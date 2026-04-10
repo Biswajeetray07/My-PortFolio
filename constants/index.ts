@@ -264,22 +264,25 @@ export const LANGUAGES = [
 
 export const PROJECTS = [
   {
-    title: "Aivon Tutor",
-    description: "A comprehensive DSA learning platform designed to help students master data structures and algorithms through interactive lessons and practice problems.",
-    image: "/projects/project-1.png",
-    link: "https://github.com/Biswajeetray07/Aivon-Tutor.git",
+    title: "AI Predictive Intelligence",
+    description: "An advanced AI-powered command center for monitoring predictive flows, model training, and resource analysis with real-time visualization.",
+    image: "/projects/ai-predictive-intelligence.png",
+    link: "https://github.com/Biswajeetray07/AI-Predictive-Intelligence",
+    liveDemo: "https://ai-predictive-intelligence.streamlit.app",
   },
   {
-    title: "Crop Quality Analysis",
-    description: "An AI-powered application for analyzing crop quality, providing farmers and distributors with actionable insights to improve produce standards.",
-    image: "/projects/project-2.png",
-    link: "https://github.com/Biswajeetray07/Crop-Quality-Analysis.git",
+    title: "Creator AI - Editing Platform",
+    description: "An intelligent platform for creators with AI powered video editing, dynamic timeline, and content generation workflows.",
+    image: "/projects/Creator.png",
+    link: "https://github.com/Biswajeetray07/Creator-AI---Editing-Platform",
+    liveDemo: "https://creator-ai---editing-platform.streamlit.app",
   },
   {
-    title: "iPhone 16 App Clone",
-    description: "A visually stunning clone of the iPhone 16 interface, demonstrating proficiency in modern mobile app development and UI/UX design.",
-    image: "/projects/project-3.png",
-    link: "https://github.com/Biswajeetray07/iphone16App-Clone.git",
+    title: "AI Blog Agent",
+    description: "An autonomous AI blogging agent to manage and generate rich content workflows featuring a sleek modern UI and metrics.",
+    image: "/projects/AI-Blog.png",
+    link: "https://github.com/Biswajeetray07/AI-Blog-Agent",
+    liveDemo: "https://ai-blog-agent.streamlit.app",
   },
 ] as const;
 
