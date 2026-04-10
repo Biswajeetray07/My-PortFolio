@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -24,8 +22,6 @@ export const HeroContent = () => {
     deletingSpeed: 50,
     delayBetweenWords: 2000,
   });
-
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <motion.div
@@ -82,45 +78,14 @@ export const HeroContent = () => {
             Contact Us
           </a>
 
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="py-2 px-6 bg-transparent border-2 border-purple-500 text-center text-white cursor-pointer rounded-lg hover:bg-purple-500/10 transition-all flex items-center gap-2"
-            >
-              View Resume
-              <svg
-                className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
-            {isDropdownOpen && (
-              <div className="absolute top-full mt-2 w-full bg-[#0D001A] border border-purple-500 rounded-lg overflow-hidden z-50">
-                <a
-                  href="/Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsDropdownOpen(false)}
-                  className="block px-4 py-2 text-white hover:bg-purple-500/20 transition-all"
-                >
-                  Resume
-                </a>
-                <a
-                  href="/Generalised-CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsDropdownOpen(false)}
-                  className="block px-4 py-2 text-white hover:bg-purple-500/20 transition-all"
-                >
-                  CV
-                </a>
-              </div>
-            )}
-          </div>
+          <a
+            href="/Specialised%20CV%20AI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-2 px-6 bg-transparent border-2 border-purple-500 text-center text-white cursor-pointer rounded-lg hover:bg-purple-500/10 transition-all flex items-center gap-2"
+          >
+            View Resume
+          </a>
         </motion.div>
       </div>
 
