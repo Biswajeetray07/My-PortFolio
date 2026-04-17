@@ -79,7 +79,7 @@ export const HeroContent = () => {
           </a>
 
           <a
-            href="/Specialised%20CV%20AI.pdf"
+            href="/Specialised%20CV-AI.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="py-2 px-6 bg-transparent border-2 border-purple-500 text-center text-white cursor-pointer rounded-lg hover:bg-purple-500/10 transition-all flex items-center gap-2"
